@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Werknemer</title>
+<link rel='stylesheet' th:href='@{/styles/default.css}' />
+</head>
+<body>
+	<dl th:if='${werknemer != null}'>
+		<dt>Nummer:</dt>
+		<dd th:text='${werknemer.id}'></dd>
+		<dt>Naam:</dt>
+		<dd th:text='${werknemer.naam}'></dd>
+	</dl>
+</body>
+</html>
